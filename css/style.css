@@ -1,0 +1,379 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.eot');
+    src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-regular-webfont.woff') format('woff'),
+         url('fonts/opensans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+	@font-face {
+        font-family: "Roboto";
+        src: url('fonts/824707032-Roboto-Regular.eot');
+        src: url('fonts/824707032-Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/824707032-Roboto-Regular.svg#Roboto') format('svg'),
+        url('fonts/824707032-Roboto-Regular.woff') format('woff'),
+        url('fonts/824707032-Roboto-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+@font-face {
+    font-family: 'times_new_roman_cyrregular';
+    src: url('fonts/times_new_roman_cyr_regular-webfont.eot');
+    src: url('fonts/times_new_roman_cyr_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/times_new_roman_cyr_regular-webfont.woff') format('woff'),
+         url('fonts/times_new_roman_cyr_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'times_new_roman_cyrbold';
+    src: url('fonts/2137613-webfont.eot');
+    src: url('fonts/2137613-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/2137613-webfont.woff') format('woff'),
+         url('fonts/2137613-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0;
+	padding:0;
+	outline: none;
+}
+img {
+    max-width: 100%;
+}
+
+
+
+body{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+	background: #fff!important;
+	/*font-family: "Roboto";*/
+	font-family: "times_new_roman_cyrbold";
+	font-size: 16px;
+	line-height: 18px;
+}
+html {
+	height:100%;
+}
+
+/* TYPOGRAPHY */
+a{color: #33b5e5;}
+a:hover{ text-decoration:none;}
+/* END TYPOGRAPHY */
+	
+header, nav, section, article, aside, footer { display:block;}
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+.clear {
+  clear:both;
+  display:block;
+  overflow:hidden;
+  visibility:hidden;
+  width:0;
+  height:0;
+}
+.clearfix:before,
+.clearfix:after {
+  content:'\0020';
+  display:block;
+  overflow:hidden;
+  visibility:hidden;
+  width:0;
+  height:0;
+}
+.clearfix:after {
+  clear:both;
+}
+
+ul {list-style: none;}
+
+
+ul li a {color: #2400ff;text-decoration: none;padding: 7px 0;line-height: 30px;height: 36px;}
+	
+#wrapper {
+	width:1000px;
+	margin:0 auto;
+}
+
+/* Buttons
+-----------------------------------------------------------------------------*/
+.btn{
+	display:inline-block;
+	position:relative;
+	overflow:visible;
+	vertical-align:middle;
+	outline:none;
+	border:none;
+	cursor:pointer;
+	-webkit-appearance:none;
+	text-decoration:none;
+}
+/* Icons
+-----------------------------------------------------------------------------*/
+.ico{
+	display:inline-block;
+	vertical-align:middle;
+	background:url('../img/icons.png') no-repeat;
+	overflow:hidden;
+	margin-right:5px;
+}
+/* Forms
+-----------------------------------------------------------------------------*/
+
+::-webkit-input-placeholder {
+	color:#84817e;
+}
+:-moz-placeholder {
+	color:#84817e;
+}
+.placeholder {
+	color:#84817e;
+}
+
+/* Structures
+-----------------------------------------------------------------------------*/
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	min-height:50px;
+}
+
+.nav-top {float: left;}
+.nav-back {float: right;}
+.nav-number {text-align: center;display: inline-block;*display: block;*zoom:1;}
+.nav-number a {text-decoration: none;color: #000!important;}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	width:1000px;
+	margin:0 auto;
+	height:100px;
+	position:relative;
+}
+
+.main_page_wp,
+.header-top-wp {
+    margin: 0 5%;
+    width: 90%;
+}
+/*.main_page_image_logo {display: none;}*/
+.list_menu li {border-top: 1px solid #000!important;/*background: url("../img/icons/arrow.png") no-repeat center right!important;*/height: 49px;overflow: hidden;}
+.list_menu li:last-child {border-botom: 1px dotted #000!important;}
+.list_menu li {font-size: 27px;}
+.list_menu li a,
+.list_menu li {box-shadow: none!important; display: block;text-overflow: ellipsis;white-space: nowrap;}
+
+.logos {width: 90%;margin: 20px 0;}
+
+.small_line {height: 5px;background: #010101;}
+
+.header-top {background: #000cff;text-align: center;padding: 10px 0;height:30px;}
+.header-top2 {background: #000cff;height:30px;padding: 15px 0px 10px;}
+.title_page {text-decoration: none;color: #fff;font-size: 24px;color: #fff; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+.inside_page li:first-child {border-top: none!important;}
+.iphone_right {color: #fff; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+float:right;text-decoration: none; color: #fff;font-style: italic;font-size: 20px;padding-right: 2px;}
+.header-top-wp { overflow: hidden;height: 25px;}
+.footers  .header-top-wp {position: relative;top: 15px;}
+.footers  .header-top2 {height: 50px;padding: 0!important;}
+.read_more_image img {height: 400px;width:100%;}
+#main_page .ui-listview > li  {
+	/*height: 55px!important;*/
+	display: block;
+} 
+
+body .number_main_p {color: #fff!important; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+	text-decoration: none; color: #fff;font-style: italic;font-size: 20px;padding-right: 2px;}
+.nav-number {height: 22px;}
+.icon-1 {
+	margin-top: 5px;
+}
+
+.header-top h1 { text-align: center;}
+/* Каталог со списком товаром */
+.put_image {
+	height: 90px;
+	overflow: hidden;
+}
+.put_image img {
+	display: block;
+	margin: 0 auto;
+	height: 90px;
+	width: 115px;
+}
+
+.title_list h1 {
+	text-align: center;
+	padding: 10px 0;
+	font-size: 14px;
+}
+
+.title_list a  {
+	text-decoration: none;
+	color: #010101;
+}
+
+.list_wrapper_footer {
+	height: 30px;	
+	clear: both;
+}
+/* Конец Каталог со списком товаром */
+.clear {
+    clear: both;
+}
+
+.bullet {
+	display: none!important;
+	background: url("../img/icons/bullet.png") no-repeat top center;
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	*display: block;
+	*zoom: 1;
+	vertical-align: middle;
+	margin-right: 10px;
+	-o-background-size: 80% 80%;  
+	-webkit-background-size:80% 80%; 
+	-moz-background-size:80% 80%; 
+	-khtml-background-size:80% 80%; 
+	background-size: 80% 80%;
+}
+
+.bullet-1 {background: url("../img/icons/i_books.png") no-repeat center right!important;}
+.bullet-2 {background: url("../img/icons/i_phone_small.png") no-repeat 99% center!important;}
+.bullet-3 {background: url("../img/icons/i_like_small.png") no-repeat  right center!important;}
+.bullet-4 {background: url("../img/icons/i-izbrannie.png") no-repeat  right 4px !important;}
+
+.list_item {width: 50%;float: left;}
+.company_img img {margin: 0 auto;display: block;}
+.company_img {margin-bottom: 10px;}
+
+
+.home {height: 30px;vertical-align: middle;}
+.nav-number {position: relative;top: 5px;font-size: 30px;color: #fff;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+.nav-number a img {position: relative;top: 0px;} 
+.center_title .header-top-wp {height: 30px;} 
+
+#put_description,
+#put_color {display: none;}
+/*.main_page {padding-bottom: 100px;}*/
+.hone_home {width: 20%;display: inline-block;}
+.main_page_image img {margin: 0 auto;display: block;}
+.read_more_image img {display: block;margin: 0 auto;}
+.main_page_image {position: relative;}
+.main_page_image_logo {width: 150px;height: 150px;background-position: 0px 0px;position: absolute;z-index: 9999;top: -72px;right: 0px;}
+.main_page_image img {position: relative;z-index: 11;}
+.list_menu li:first-child {border-top: none!important;}
+
+html, body {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+}
+body {
+	min-height: 100%;
+height: 100%;
+position: relative;
+}
+
+.mains {
+width: 100%;
+min-height: 100%;
+/*padding-bottom: 100px;*/
+}
+.small_bottom {height: 50px}
+
+.footers {
+width: 100%;
+margin-top: -50px;
+height: 50px;
+}
+.mebel_title {padding: 8px 0px 5px!important;}
+.vk_right {float: right;font-size: 24px;color: #fff;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+.center_title .nav-number a {color: #fff!important;font-size: 26px!important;}
+.perm_left {font-size: 24px;color: #fff;color: #fff;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+.header-top {
+	/*-webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 1px 5px 0px rgba(50, 50, 50, 0.75);*/
+}
+
+.list_menu li {
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+-moz-box-shadow:    0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+box-shadow:         0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.header-top-old {
+	/* Legacy browsers */
+	background: #ccc url("gradient-bg.png") repeat-x top;
+	-o-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	/* Recent browsers */
+	background: -webkit-gradient(
+		linear,
+		left top, left bottom,
+		from(#fff),
+		to(#ccc)
+	);
+	background: -webkit-linear-gradient(
+		top,
+		#fff,
+		#ccc
+	);
+	background: -moz-linear-gradient(
+		top,
+		#fff,
+		#ccc
+	);
+	background: -o-linear-gradient(
+		top,
+		#fff,
+		#ccc
+	);
+	background: linear-gradient(
+		top,
+		#fff,
+		#ccc
+	);
+}
+
+
+
+@media (max-width: 1500px) {
+    .list_item {width: 25%;}
+}
+
+@media (max-width: 630px) {
+    .list_item {width: 33.3%;}
+}
+
+@media (max-width: 480px) {
+	.main_page_image_logo img {width:120px;}
+    .list_item {width: 50%;}
+    .read_more_image img {height: 360px;} 
+}
+@media (max-width: 320px) {
+	.read_more_image img {height: 240px;} 
+}
